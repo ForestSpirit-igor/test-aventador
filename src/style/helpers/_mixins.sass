@@ -1,0 +1,112 @@
+@import const
+
+// breakpoint media
+=mob
+  @media only screen and (min-width: $mob)
+    @content
+
+=mob-md
+  @media only screen and (min-width: $mob-md)
+    @content
+
+=mob-lg
+  @media only screen and (min-width: $mob-lg)
+    @content
+
+=tabl
+  @media only screen and (min-width: $tabl)
+    @content
+
+=lap
+  @media only screen and (min-width: $lap)
+    @content
+
+=desk
+  @media only screen and (min-width: $desk)
+    @content
+
+=desk-md
+  @media only screen and (min-width: $desk-md)
+    @content
+
+=desk-lg
+  @media only screen and (min-width: $desk-lg)
+    @content
+
+
+// placeholder
+=placeholder-color($color-pl)
+  &:-moz-placeholder,
+  &::-moz-placeholder
+    color: $color-pl
+    opacity: 1
+  &::-webkit-input-placeholder
+    color: $color-pl
+    opacity: 1
+  &:focus
+    &:-moz-placeholder,
+    &::-moz-placeholder
+      opacity: 0
+    &::-webkit-input-placeholder
+      opacity: 0
+
+//inline block not spaces
+=inline-block-not-spaces
+  font: 14px Verdana, Arial, sans-serif
+  word-spacing: -.36em
+
+
+
+//corner elements
+=corner-top($corner-size-right: 4px, $corner-size-bottom: 6px, $corner-size-left: 4px, $corner-color: #fff)
+  display: inline-block
+  vertical-align: middle
+  margin: 0 3px
+  width: 0
+  height: 0
+  border-top: none
+  border-right: $corner-size-right solid transparent
+  border-bottom: $corner-size-bottom solid $corner-color
+  border-left: $corner-size-left solid transparent
+
+=corner-bottom($corner-size-top: 6px, $corner-size-right: 4px, $corner-size-left: 4px, $corner-color: #fff)
+  display: inline-block
+  vertical-align: middle
+  margin: 0 3px
+  width: 0
+  height: 0
+  border-top: $corner-size-top solid $corner-color
+  border-right: $corner-size-right solid transparent
+  border-bottom: none
+  border-left: $corner-size-left solid transparent
+
+=corner-left($corner-size-top: 4px, $corner-size-right: 6px, $corner-size-bottom: 4px, $corner-color: #fff)
+  display: inline-block
+  vertical-align: middle
+  margin: 0 3px
+  width: 0
+  height: 0
+  border-top: $corner-size-top solid transparent
+  border-right: $corner-size-right solid $corner-color
+  border-bottom: $corner-size-bottom solid transparent
+  border-left: none
+
+=corner-right($corner-size-top: 4px, $corner-size-bottom: 4px, $corner-size-left: 6px, $corner-color: #fff)
+  display: inline-block
+  vertical-align: middle
+  margin: 0 3px
+  width: 0
+  height: 0
+  border-top: $corner-size-top solid transparent
+  border-right: none
+  border-bottom: $corner-size-bottom solid transparent
+  border-left: $corner-size-left solid $corner-color
+
+
+//select text noen
+=select-text-none ($select-param: none)
+  -webkit-user-select: $select-param
+  -moz-user-select: $select-param
+  -ms-user-select: $select-param
+  user-select: $select-param
+

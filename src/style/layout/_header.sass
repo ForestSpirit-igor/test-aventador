@@ -1,0 +1,96 @@
+/* ----- Header ------------------------ */
+.header
+  position: relative
+  padding: 46px 0 40px
+
+.logo
+  max-width: 155px
+  height: 80px
+  float: left
+  a
+    display: block
+    outline: none
+    position: relative
+    font-family: $site-font-family-2, Arial, sans-serif
+    font-size: 12px
+    font-weight: normal
+    line-height: 3.75
+    letter-spacing: 2.4px
+    color: $cl-light
+    margin-left: 65px
+    text-decoration: none
+    text-transform: uppercase
+    padding-top: 7px
+    &:before
+      content: ' '
+      position: absolute
+      z-index: -1
+      top: 0
+      left: -55px
+      border-radius: 50%
+      background-color: $cl-cutty-sark2
+      width: 80px
+      height: 80px
+    &:hover
+      text-decoration: underline
+      color: $cl-light
+      &:before
+        animation:
+          name: logo-anim
+          duration: 300ms
+          timing-function: ease-in-out
+          fill-mode: forwards
+
+@keyframes logo-anim
+  0%
+    left: -55px
+  50%
+    left: 0
+  100%
+    left: -55px
+
+.header-nav
+  float: right
+  text-align: right
+  margin-right: 30px
+  padding-top: 12px
+
+.menu
+  &-item
+    display: inline-block
+    vertical-align: middle
+    font-size: 12px
+    line-height: 13px
+    letter-spacing: 2.4px
+    text-transform: uppercase
+    color: $cl-light
+    &_active
+      .menu-item__link
+        background-color: $cl-cutty-sark2
+        color: $cl-light
+        text-decoration: none
+        &:hover
+          cursor: default
+        &:before
+          content: ' '
+          position: absolute
+          top: 100%
+          left: 15px
+          +corner-bottom(6px, 6px, 6px, $cl-cutty-sark2)
+          border-top-color: $cl-cutty-sark2
+
+    &__link
+      padding: 10px 15px
+      display: inline-block
+      color: $cl-light
+      position: relative
+
+      &:hover
+        background-color: $cl-cutty-sark2
+        color: $cl-light
+
+
+
+/* ----- END Header -------------------- */
+/*                                       */
+/*                                       */

@@ -1,0 +1,71 @@
+/* ----- Page structure ---------------- */
+.clear
+  clear: both
+
+.group:after 
+  content: "."
+  clear: both
+  display: block
+  height: 0
+  visibility: hidden
+
+#wrapper
+  min-width: 320px
+
+.section-st
+  padding: 20px 0
+
+.container
+  width: auto
+  flex-wrap: wrap
+  max-width: 980px
+  padding-left: 50px
+  padding-right: 50px
+  margin: 0 auto
+  &_fix-ie
+    display: flex
+    flex-wrap: wrap
+
+html, body
+  height: 100%
+
+body
+  display: flex
+  flex-direction: column
+
+#wrapper
+  flex: 1 0 auto
+
+.footer
+  flex-shrink: 0
+
+.visible-lap
+  display: block
+
+.hidden-lap
+  display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

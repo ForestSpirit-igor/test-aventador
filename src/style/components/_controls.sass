@@ -1,0 +1,178 @@
+/* ----- Controls styles ----------------- */
+.btn
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  margin: 0
+  padding: $btn-padding
+  font: $btn-font
+  border: none
+  border-radius: $btn-radius
+  text-align: center
+  text-decoration: none
+  outline: none
+  cursor: pointer
+  color: $btn-color
+  background-color: $btn-fill-color
+
+  &:hover
+    text-decoration: none
+    color: $btn-color-hover
+    background-color: $btn-fill-hover-color
+
+  &_second-st
+    background-color: $btn-fill-second-color
+
+    &:hover
+      background-color: $btn-fill-second-hover-color
+
+  &_border
+    border: $btn-border
+    color: $btn-border-color-text
+    line-height: $btn-border-line-height
+    background: transparent
+
+    &:hover
+      color: $btn-border-hover-color-text
+      background-color: $btn-border-hover-color
+
+    &.btn_second-st
+      border-color: $btn-fill-second-color
+      color: $btn-fill-second-color
+
+      &:hover
+        color: $btn-border-hover-color-text
+        background-color: $btn-fill-second-color
+
+  &_min-width
+    min-width: $btn-width-min
+
+  &_max
+    width: 100%
+
+  &_sm
+    padding: $btn-padding-sm
+
+    &.btn_min-width
+      min-width: $btn-width-min-sm
+
+  &_md
+    padding: $btn-padding-md
+
+    &.btn_min-width
+      min-width: $btn-width-min-md
+
+  &_lg
+    padding: $btn-padding-lg
+
+    &.btn_min-width
+      min-width: $btn-width-min-lg
+
+  &__icon-text
+    display: inline-block
+    vertical-align: middle
+
+  &__icon
+    width: 20px
+    height: 20px
+    display: inline-block
+    vertical-align: middle
+    border: 1px solid #000
+    font-style: normal
+
+    &_right
+      margin-left: 5px
+
+    &_left
+      margin-right: 5px
+
+  // &_font-bold
+  //   font-family: $btn-font-family-bold
+  //   font-weight: $btn-font-weight-bold
+
+  // &_font-light
+  //   font-family: $btn-font-family-light
+  //   font-weight: $btn-font-weight-light
+
+  // &_size-sm
+  //   font-size: $btn-size-sm
+  // &_size-md
+  //   font-size: $btn-size-md
+  // &_size-lg
+  //   font-size: $btn-size-lg
+
+  // &_up
+  //   text-transform: uppercase
+
+  // &_radius-sm
+  //   border-radius: $btn-radius-sm
+
+input.btn
+  padding-top: 0
+  padding-bottom: 0
+  height: $input-height
+  width: auto
+  &_max
+    width: 100%
+
+.form-group-grid__four-col
+  .btn
+    vertical-align: bottom
+    display: block
+
+.placeholder
+  color: $st-color-placeholder
+
+input,
+textarea
+  +placeholder-color($st-color-placeholder)
+
+::-webkit-contacts-auto-fill-button
+  opacity: 0
+
+input[type="password"]::-webkit-contacts-auto-fill-button
+  opacity: 1
+
+input,
+textarea
+  position: relative
+  height: $input-height
+  width: 100%
+  padding: $input-padding
+  border: $input-border
+  font: $input-font
+  color: $input-color
+  background-color: $input-fill-color
+  outline: none
+  border-radius: $input-radius
+  -webkit-appearance: none
+  box-shadow: $input-shadow
+
+  &:hover
+    border-color: $input-hover-border-color
+
+  &:focus
+    border-color: $input-focus-border-color
+
+textarea
+  vertical-align: top
+  height: $textarea-height
+  padding: $textarea-padding
+  resize: none
+
+/* ----- END controls ------------------- */
+/*                                       */
+/*                                       */
+
+
+
+
+
+
+
+
+
+
+
+
+
